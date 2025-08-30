@@ -9,7 +9,7 @@
   --neutral-dark: #495057;
   --text-primary: #212529;
   --text-secondary: #6C757D;
-  --success: #198754;
+  --success: rgb(25, 135, 84);
   --warning: #FFC107;
   --danger: #DC3545;
 }
@@ -19,7 +19,7 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
   color: var(--text-primary);
-  background-color: var(--neutral-light);
+  background-color: #b9d5c8 !important;
 }
 
 h1, h2, h3, h4, h5, h6 {

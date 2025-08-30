@@ -16,8 +16,8 @@ import { Event } from '../../model/event.model';
           <div class="col-lg-12">
             <div class=" full-width-green-bg">
               <div>
-                <h5 class="text-white" style="margin: 0;">
-                  <p class="">Every Saturday at the Civic Center, Come on visit us </p>
+                <h5 class="text-white">
+                  <p class="">Every Saturday at the Civic Center, Come and visit us @10am - 2 pm </p>
                 </h5>
                 <div class="d-flex flex-wrap gap-3 fade-in stagger-animation mt-4">
                   <a routerLink="/about" class="btn btn-primary-custom">Learn Our Story</a>
@@ -25,34 +25,53 @@ import { Event } from '../../model/event.model';
                 </div>
               </div>
             </div>
-            <div class="full-width-green-bg flex-container">
-              <div class="d-flex justify-content-between flex-wrap pt-4">
-                <div class="p-4 bg-light rounded text-center flex-fill m-2 section-box">
-                  <i class="bi bi-house-door"></i>
-                  Section 1
-                </div>
-                <div class="p-4 bg-light rounded text-center flex-fill m-2 section-box">
-                  <i class="bi bi-people"></i>
-                  Section 2
-                </div>
-                <div class="p-4 bg-light rounded text-center flex-fill m-2 section-box">
-                  <i class="bi bi-gear"></i>
-                  Section 3
-                </div>
-                <div class="p-4 bg-light rounded text-center flex-fill m-2 section-box">
-                  <i class="bi bi-bar-chart"></i>
-                  Section 4
-                </div>
-                <div class="p-4 bg-light  rounded text-center flex-fill m-2 section-box">
-                  <i class="bi bi-envelope"></i>
-                  Section 5
-                </div>
-                <div class="p-4 bg-light rounded text-center flex-fill m-2 section-box">
-                  <i class="bi bi-check-circle"></i>
-                  Section 6
+
+             <!-- Gallery Categories -->
+          <div class="row mt-2 ">
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="custom-card text-center p-4">
+
+                <h5 class="mb-5">Historic Homes</h5>
+                <!-- <p class="text-muted">Beautiful Victorian and Craftsman style houses</p> -->
+                <div class="mb-3" style="color: var(--secondary-gold); font-size: 3rem;">
+                  <i class="fas fa-home"></i>
                 </div>
               </div>
             </div>
+            
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="custom-card text-center p-4">
+
+                <h5 class="mb-5">Parks & Gardens</h5>
+                <!-- <p class="text-muted">Green spaces and community gardens</p>  -->
+                <div class="mb-3" style="color: var(--accent-green); font-size: 3rem;">
+                  <i class="fas fa-tree"></i>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="custom-card text-center p-4">
+                
+                <h5 class="mb-5">Community Events</h5>
+                <!-- <p class="text-muted">Festivals, gatherings, and celebrations</p> -->
+                <div class="mb-3" style="color: var(--primary-navy); font-size: 3rem;">
+                  <i class="fas fa-users"></i>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="custom-card text-center p-4">
+
+                <h5 class="mb-5">Then & Now</h5>
+                <!-- <p class="text-muted">Historical comparisons and evolution</p> -->
+                <div class="mb-3" style="color: var(--warning); font-size: 3rem;">
+                  <i class="fas fa-camera"></i>
+                </div>
+              </div>
+            </div>
+          </div>
           </div>
         </div>
       </div>
@@ -61,10 +80,10 @@ import { Event } from '../../model/event.model';
     <!-- Featured Highlights -->
     <section class="section-padding bg-white">
       <div class="container">
-        <div class="row text-center mb-5">
-          <div class="col-12">
+        <div class="row mb-5">
+          <div class="col-12 text-start">
             <h2 class="display-5 mb-3">Experience Historic Englewood</h2>
-            <p class="lead text-muted">Explore what makes our community special</p>
+            <!-- <p class="lead text-muted">Explore what makes our community special</p> -->
           </div>
         </div>
 
@@ -154,12 +173,12 @@ import { Event } from '../../model/event.model';
     </section>
 
     <!-- Upcoming Events -->
-    <section class="section-padding" style="background-color: #F8F9FA;">
+    <section class="section-padding" style=" background-color: rgb(24 112 96) !important">
       <div class="container">
         <div class="row mb-5">
           <div class="col-12 text-center">
-            <h2 class="display-5 mb-3">Upcoming Events</h2>
-            <p class="lead text-muted">Join us for these exciting community gatherings</p>
+            <h2 class="display-5 text-start mb-3 text-white">Upcoming Events</h2>
+            <!-- <p class="lead text-muted">Join us for these exciting community gatherings</p> -->
           </div>
         </div>
 
@@ -181,13 +200,13 @@ import { Event } from '../../model/event.model';
               </div>
               <div class="card-body p-4">
                 <h5 class="card-title">{{ event.title }}</h5>
-                <p class="card-text text-muted mb-2">
+                <p class="card-text text-white mb-2">
                   <i class="fas fa-clock me-2"></i>{{ event.time }}
                 </p>
-                <p class="card-text text-muted mb-3">
+                <p class="card-text text-white mb-3">
                   <i class="fas fa-map-marker-alt me-2"></i>{{ event.location }}
                 </p>
-                <p class="card-text">{{ event.description }}</p>
+                <p class="card-text text-white">{{ event.description }}</p>
               </div>
             </div>
           </div>
@@ -204,7 +223,7 @@ import { Event } from '../../model/event.model';
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-8">
-            <h2 class="display-6 mb-3">Become Part of Our Story</h2>
+            <h3 class="display-6 mb-3">Become Part of Our Story</h3>
             <p class="lead mb-4">
               Help preserve Englewood's historic character for future generations. Whether through
               volunteering, membership, or simply spreading awareness, every contribution matters.
@@ -220,46 +239,80 @@ import { Event } from '../../model/event.model';
   styles: [
     `
       .full-width-green-bg {
-         color: #fff;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        // justify-content: center;
+        // height: 150px;
+        // width: 100vw;
+        // position: relative;
+        // left: 50%;
+        // right: 50%;
+        // margin-left: -50vw;
+        // margin-right: -50vw;
+        background-color: rgb(24, 112, 96) !important;
+        margin-top: 260px !important;
+        padding: 30px;
+        margin-bottom: -8px;
+      }
+
+      .custom-card:hover {
+        transform: scale(1.05);
+        transition: transform 0.3s ease;
+        color: #073129ff !important;
+      }
+
+      .mt-2 {
+        background-color: rgb(24, 112, 96) !important;
+        color: #fff;
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 150px;
+        height: 320px;
         width: 100vw;
         position: relative;
         left: 50%;
         right: 50%;
         margin-left: -50vw;
         margin-right: -50vw;
-        background-color: rgb(24, 112, 96) !important;
-        margin-top: 220px !important;
       }
-       .section-box {
-        transition: all 0.3s ease;
-        cursor: pointer;
+      h5 {
+        color: #fff;
       }
-      .section-box:hover {
-        background-color: #064420; /* dark green */
-        color: #fff; /* text white */
-        transform: translateY(-5px); /* lift effect */
-        box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+      .btn-outline-primary {
+        border: 1px solid #187060;
+        background-color: transparent;
+        color: #187060;
       }
-      .section-box i {
-        font-size: 2rem;
-        margin-bottom: 8px;
+      .btn-outline-primary:hover {
+        background-color: #187060;
+        color: #fff;
+      }
+      h2 {
+        margin-left: 20px;
+        color: #187060;
+        position: relative;
+      }
+      h2::after {
+        content: '';
         display: block;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        width: 20%;
+        height: 8px;
+        background: #187060;
+        border-radius: 6px;
+        margin-top: 18px;
       }
-      .flex-container {
-        min-width: 100%;
-        height: auto;
-        background-color:rgb(24, 112, 96) !important;
-        border: 1px solid rgba(255, 255, 255, 0.2);
-        border: 0;
+
+      .card-title {
+        color: #187060;
       }
-      .bg-light {
-        background-color: rgb(24, 112, 96) !important;
-        height: 200px;
-        width: 150px;
+
+      .bg-white {
+          background-color: #b9d5c8 !important;
+
       }
     `,
   ],
